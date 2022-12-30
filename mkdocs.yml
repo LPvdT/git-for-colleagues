@@ -12,7 +12,7 @@ plugins:
   - offline
 
 nav:
-  - Home: index.md
+  - Home: introduction.md
   - Git 101: git_101.md
 
 markdown_extensions:
