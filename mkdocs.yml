@@ -17,30 +17,31 @@ nav:
   - The Git Guide:
       - index.md
       - The Git Repository:
-          - 1_git_repository/index.md
-          - 1_git_repository/working_staging_repo.md
-          - 1_git_repository/status.md
+          - git_repository/index.md
+          - git_repository/working_staging_repo.md
+          - git_repository/status.md
+      - Commits:
+          - commits/index.md
+          - commits/cherry_picking.md
       - Branches:
-          - 2_branches/index.md
-          - 2_branches/merging.md
-      - Cherry Picking:
-          - 3_cherry_picking/index.md
+          - branches/index.md
+          - branches/merging.md
       - Revert & Reset:
-          - 4_revert_reset/index.md
-          - 4_revert_reset/reset.md
-          - 4_revert_reset/head.md
+          - revert_reset/index.md
+          - revert_reset/reset.md
+          - revert_reset/head.md
       - Stash:
-          - 5_stash/index.md
+          - stash/index.md
       - Remote Repositories:
-          - 6_remote_repos/index.md
-          - 6_remote_repos/clone_fork.md
-          - 6_remote_repos/remote_branches.md
-          - 6_remote_repos/fetch_pull_push.md
-          - 6_remote_repos/pull_requests.md
+          - remote_repos/index.md
+          - remote_repos/clone_fork.md
+          - remote_repos/remote_branches.md
+          - remote_repos/fetch_pull_push.md
+          - remote_repos/pull_requests.md
       - Best practices & Design:
-          - 7_design_best_practices/index.md
-          - 7_design_best_practices/best_practices.md
-          - 7_design_best_practices/design.md
+          - design_best_practices/index.md
+          - design_best_practices/best_practices.md
+          - design_best_practices/design.md
 
 # Configuration
 theme:
