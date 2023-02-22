@@ -22,6 +22,8 @@ nav:
           - git_repository/status.md
       - Commits:
           - commits/index.md
+          - commits/staging.md
+          - commits/committing.md
           - commits/cherry_picking.md
       - Branches:
           - branches/index.md
@@ -52,7 +54,7 @@ theme:
     - content.tooltips
     - header.autohide
     - navigation.expand
-    - navigation.indexes
+    # - navigation.indexes
     - navigation.path
     - navigation.instant
     - navigation.prune
