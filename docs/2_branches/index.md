@@ -2,7 +2,7 @@
 
 Branches are used when you want to add a new feature to your project, implement a hotfix, etc.
 
-### 1.4.1. Branch: Create
+## Branch: Create
 
 In order to create a new branch, you can use the `git branch` command.
 
@@ -11,7 +11,7 @@ In order to create a new branch, you can use the `git branch` command.
 git branch development
 ```
 
-### 1.4.2. Branch: Checkout
+## Branch: Checkout
 
 In order to start writing commits into your new `development` branch, you need to switch to it. In Git this is called `checkout`.
 
@@ -20,7 +20,7 @@ In order to start writing commits into your new `development` branch, you need t
 git checkout development
 ```
 
-### 1.4.3. Example
+## Example
 
 Below is a simple visualisation to demonstrate this process:
 

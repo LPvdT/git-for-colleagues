@@ -7,11 +7,11 @@ graph LR
   A(Working Directory) -.-> |git add| B(Staging Area) -.-> |git commit| C(Repository)
 ```
 
-### Working Directory
+## Working Directory
 
 The current state of the files and folders in the filesystem. At this point, Git does not track them yet.
 
-### Staging Area 
+## Staging Area 
 
 Before modified files can be 'saved' (i.e. committed) to the repository, they have to be `staged`.
 
@@ -20,7 +20,7 @@ Before modified files can be 'saved' (i.e. committed) to the repository, they ha
 git add script.py
 ```
 
-### Repository
+## Repository
 
 The repository holds all your committed files. All this information is saved in the hidden `.git` folder.
 

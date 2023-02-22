@@ -4,7 +4,7 @@ It may happen that you have accidentally committed a change into the wrong branc
 
 Where `git merge` merges all commits of one branch into another branch, `git cherry-pick` lets you choose which specific comments you want to copy to another branch.
 
-### 1.6.1. Example
+## Example
 
 The visualisation below is more or less the same as in the merging example above, only we were accidentally checked out in the `main` branch when we committed the commit with ID *damn*.
 

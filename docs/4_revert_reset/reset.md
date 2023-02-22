@@ -16,7 +16,7 @@ git reset
 
 However, the command also be made a lot meaner by using the `--hard` argument. This way, the command can be used to hard delete commits. Comments reset this way will be entirely removed from the commit history and cannot be retrieved.
 
-#### 1.7.2.1. Example
+## Example
 
 We have accidentally committed a change in the `development` branch with commit ID `damn`. We want to use `git reset --hard` to completely obliterate this mistake from the annals of history.
 
