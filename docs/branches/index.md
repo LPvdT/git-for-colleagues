@@ -1,47 +1,15 @@
 # Branches
 
-Branches are used when you want to add a new feature to your project, implement a hotfix, etc.
+In Git, a branch is simply a new, or separate, version of another branch. Branches are used when you want to e.g. add a new feature to your project, or implement a hotfix, while keeping your reference branch (the 'original' version) intact.
 
-## Branch: Create
+## The `main` branch
 
-In order to create a new branch, you can use the `git branch` command.
+After initialising a repository, you always start out with a single branch called `main`. 
 
-```bash
-# Create the branch 'development'
-git branch development
-```
+!!! danger "Committing into `main`"
+      For reasons, which I will get into later, it is *extremely* bad practice (and very frowned upon in the *open source community*) to actively commit into your `main` branch. This branch should be your release version of the project only - and should therefore always be clean and bug-free. Randomly committing changes into this branch could heavily disrupt your project user's experience.
 
-## Branch: Checkout
+      It is best practive to (at least) have a seperate `development` branch, in which you make your changes, which you subsequently merge into your `main` branch once new features have been properly completed and tested.
 
-In order to start writing commits into your new `development` branch, you need to switch to it. In Git this is called `checkout`.
-
-```bash
-# Checkout (i.e. switch to) the 'development' branch
-git checkout development
-```
-
-## Example
-
-Below is a simple visualisation to demonstrate this process:
-
-1. `git init`
-   - A new repository is made. `main` is the default branch.
-2. Two commits are made on the `main` branch.
-   - Therefore, twice a file has been added/modified; staged with `git add` and then committed with `git commit`.
-3. A new branch called `development` is made with `git branch development`.
-4. The `development` branch is switched to with `git checkout development`.
-5. Three commits are made on the `development branch`.
-   - Therefore, trice a file has been added/modified; staged with `git add` and then committed with `git commit`.
-
-<br/>
-
-```mermaid
-gitGraph
-  commit id: "main_1"
-  commit id: "main_2"
-  branch development
-  checkout development
-  commit id: "dev_1"
-  commit id: "dev_2"
-  commit id: "dev_3"
-```
+!!! note
+      The initial branch of the Git repository could also be named `master`. This is usually the case in older Git versions. The default naming convention `main` has occurred after the general uproar around the terms *master*/*slave*.
