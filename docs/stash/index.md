@@ -4,7 +4,7 @@ Imagine you are hard at work writing amazing code for a new feature, and then yo
 
 Don't worry; you don't need to manually move all code and every file around. Git has you covered with `git stash`.
 
-## Example
+## Example: `git stash`
 
 ```bash
 # Stage some arbitrary changes in the INDEX
