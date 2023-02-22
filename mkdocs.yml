@@ -24,10 +24,11 @@ nav:
           - commits/index.md
           - commits/staging.md
           - commits/committing.md
-          - commits/cherry_picking.md
+          - commits/difference.md
       - Branches:
           - branches/index.md
           - branches/merging.md
+          - branches/cherry_picking.md
       - Revert & Reset:
           - revert_reset/index.md
           - revert_reset/reset.md
@@ -105,6 +106,10 @@ theme:
 plugins:
   - search
   - offline
+  - glightbox:
+      touchNavigation: true
+      effect: zoom
+      slide_effect: slide
 
 # Extra
 extra:
