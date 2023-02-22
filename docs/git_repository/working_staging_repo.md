@@ -20,7 +20,8 @@ Before modified files can be 'saved' (i.e. committed) to the repository, they ha
 git add script.py
 ```
 
-> You can also stage multiple files and 'save' (i.e. submit them for tracking) within a single commit. This is especially useful if multiple files are associated with a change you would like to commit.
+!!! info
+    You can also stage multiple files and 'save' (i.e. submit them for tracking) within a single commit. This is especially useful if multiple files are associated with a change you would like to commit.
 
 ## Repository
 
