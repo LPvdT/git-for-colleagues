@@ -1,4 +1,4 @@
-## Working Directory, Staging Area & Repository
+# Working Directory, Staging Area & Repository
 
 There are the following three segments to Git development.
 
