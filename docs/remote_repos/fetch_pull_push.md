@@ -2,7 +2,7 @@
 
 In order te retrieve changes made by others, and submit your own changes to the remote, Git provides the `git fetch`, `git pull` and `git push` commands.
 
-#### 1.9.3.1. Fetch
+## Fetch
 
 The `git fetch` commands downloads all commits, files and refs from a remote repository into your local repository. Fetched content is isolated from existing local content, which makes it safe. You can review all fetched commits before merging them with your existing work.
 
@@ -17,7 +17,7 @@ git fetch origin development
 git fetch --all
 ```
 
-#### 1.9.3.2. Pull
+## Pull
 
 The `git pull` command is more aggressive. Not only will it download all commits, files and refs from the remote repository; it will also immediately call `git merge` to integrate it. If you already have pending changes, this may cause merge conflicts which you need to resolve.
 
@@ -36,7 +36,7 @@ git merge origin/development
 git pull --rebase origin
 ```
 
-#### 1.9.3.3. Push
+## Push
 
 The `git push` command uploads changes in the local repository to a remote. It is the counterpart of `git fetch`.
 

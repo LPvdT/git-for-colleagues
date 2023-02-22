@@ -6,7 +6,7 @@ You cannot directly manipulate these branches yourself. Git will automatically d
 
 > Think remote-tracking branches as bookmarks: they remind you where the branches in your remote repositories were the last time you connected to them.
 
-#### 1.9.2.1. Manipulating Remotes
+## Manipulating Remotes
 
 When you clone a repository, using `git clone`, Git will automatically know the location of the remote. However, you can also manually add or remove remotes:
 
@@ -17,7 +17,7 @@ git remote add origin git@ssh.dev.azure.com:v3/deltafibernl/BICC/Placeholder
 # Manually remove a remote for the current repository: git remote rm <name>
 git remote rm origin
 ```
-#### 1.9.2.2. Example
+## Example
 
 Consider the example below:
 

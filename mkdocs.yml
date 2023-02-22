@@ -1,42 +1,46 @@
 # Project information
 site_name: Git For Colleagues
-# site_url: ...
 site_author: Laurens van der Tas
-site_description: >-
-  Lorem ipsum dolor sit amet.
-
-# Repository
+site_description: To the point guide for colleagues for using Git.
 repo_name: git_for_colleagues
-# repo_url: ...
-
-# Copyright
 copyright: Copyright &copy; 2023 Laurens van der Tas
+# repo_url: ...
+# site_url: ...
 
 # Page tree
 nav:
-  - The Git Guide:
+  - Git For Colleagues:
       - index.md
       - The Git Repository:
-          - 1_git_repository/index.md
-          - 1_git_repository/working_staging_repo.md
-          - 1_git_repository/status.md
+          - git_repository/index.md
+          - git_repository/working_staging_repo.md
+          - git_repository/status.md
+      - Commits:
+          - commits/index.md
+          - commits/staging.md
+          - commits/committing.md
+          - commits/difference.md
       - Branches:
-          - 2_branches/index.md
-          - 2_branches/merging.md
-      - Cherry Picking:
-          - 3_cherry_picking/index.md
+          - branches/index.md
+          - branches/creating_switching.md
+          - branches/merge_rebase.md
+          - branches/cherry_picking.md
       - Revert & Reset:
-          - 4_revert_reset/index.md
-          - 4_revert_reset/reset.md
-          - 4_revert_reset/head.md
+          - revert_reset/index.md
+          - revert_reset/revert_reset.md
+          - revert_reset/head.md
       - Stash:
-          - 5_stash/index.md
+          - stash/index.md
       - Remote Repositories:
-          - 6_remote_repos/index.md
-          - 6_remote_repos/clone_fork.md
-          - 6_remote_repos/remote_branches.md
-          - 6_remote_repos/fetch_pull_push.md
-          - 6_remote_repos/pull_requests.md
+          - remote_repos/index.md
+          - remote_repos/clone_fork.md
+          - remote_repos/remote_branches.md
+          - remote_repos/fetch_pull_push.md
+          - remote_repos/pull_requests.md
+      - Best practices & Design:
+          - design_best_practices/index.md
+          - design_best_practices/best_practices.md
+          - design_best_practices/design.md
 
 # Configuration
 theme:
@@ -46,16 +50,17 @@ theme:
     - content.code.annotate
     - content.tooltips
     - header.autohide
-    - navigation.expand
+    # - navigation.expand
     - navigation.indexes
     - navigation.path
     - navigation.instant
     - navigation.prune
     - navigation.sections
-    - navigation.tabs
-    - navigation.tabs.sticky
+    # - navigation.tabs
+    # - navigation.tabs.sticky
     - navigation.top
     - navigation.tracking
+    - navigation.footer
     - search.highlight
     - search.share
     - search.suggest
@@ -90,14 +95,18 @@ theme:
   font:
     text: Barlow
     code: JetBrains Mono
-  # favicon: assets/favicon.png
   icon:
     logo: logo
+  favicon: assets/favicon.png
 
 # Plugins
 plugins:
   - search
   - offline
+  - glightbox:
+      touchNavigation: true
+      effect: zoom
+      slide_effect: slide
 
 # Extra
 extra:
@@ -124,6 +133,9 @@ markdown_extensions:
       emoji_index: !!python/name:materialx.emoji.twemoji
   - pymdownx.highlight:
       anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.snippets
   - pymdownx.inlinehilite
   - pymdownx.keys
   - pymdownx.magiclink:
