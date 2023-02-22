@@ -1,45 +1,144 @@
+# Project information
 site_name: Git 101
+# site_url: ...
+site_author: Laurens van der Tas
+site_description: >-
+  Lorem ipsum dolor sit amet.
 
+# Repository
+repo_name: git_for_colleagues
+# repo_url: ...
+
+# Copyright
+copyright: Copyright &copy; 2023 Laurens van der Tas
+
+# Page tree
+nav:
+  - The Git Guide:
+      - index.md
+      - The Git Repository:
+          - 1_git_repository/index.md
+          - 1_git_repository/working_staging_repo.md
+          - 1_git_repository/status.md
+      - Branches:
+          - 2_branches/index.md
+          - 2_branches/merging.md
+      - Cherry Picking:
+          - 3_cherry_picking/index.md
+      - Revert & Reset:
+          - 4_revert_reset/index.md
+          - 4_revert_reset/reset.md
+          - 4_revert_reset/head.md
+      - Stash:
+          - 5_stash/index.md
+      - Remote Repositories:
+          - 6_remote_repos/index.md
+          - 6_remote_repos/clone_fork.md
+          - 6_remote_repos/remote_branches.md
+          - 6_remote_repos/fetch_pull_push.md
+          - 6_remote_repos/pull_requests.md
+
+# Configuration
 theme:
   name: material
   language: en
+  features:
+    - content.code.annotate
+    - content.tooltips
+    - header.autohide
+    - navigation.expand
+    - navigation.indexes
+    - navigation.path
+    - navigation.instant
+    - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    - toc.integrate
   palette:
-    primary: deep orange
-    accent: amber
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      primary: pink
+      accent: pink
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
 
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: pink
+      accent: pink
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: pink
+      accent: pink
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+  font:
+    text: Barlow
+    code: JetBrains Mono
+  # favicon: assets/favicon.png
+  icon:
+    logo: logo
+
+# Plugins
 plugins:
   - search
   - offline
 
-nav:
-  - Home: index.md
-  - Git 101: git_101.md
+# Extra
+extra:
+  generator: true
 
+# Extensions
 markdown_extensions:
+  - abbr
   - admonition
   - attr_list
-  - md_in_html
-  - tables
-  - footnotes
   - def_list
-  - abbr
-  - pymdownx.critic
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
   - pymdownx.caret
-  - pymdownx.keys
-  - pymdownx.mark
-  - pymdownx.tilde  
   - pymdownx.details
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.tasklist:
-      custom_checkbox: true
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:materialx.emoji.twemoji
   - pymdownx.highlight:
       anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
