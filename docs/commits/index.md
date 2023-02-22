@@ -2,7 +2,5 @@
 
 `Commits` are basically 'save points', wherein Git records the changes within files and folder with respect to the previous state.
 
-```bash
-# Commit script.py
-git commit -m "Add: script.py"
-```
+* For newly committed files, that previous were not checked, Git simply starts tracking them.
+* For files that have been committed previously, and are committed again with changes, Git will keep track of the changes.

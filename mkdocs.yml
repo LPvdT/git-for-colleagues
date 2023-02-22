@@ -1,16 +1,11 @@
 # Project information
 site_name: Git For Colleagues
-# site_url: ...
 site_author: Laurens van der Tas
-site_description: >-
-  Lorem ipsum dolor sit amet.
-
-# Repository
+site_description: To the point guide for colleagues for using Git.
 repo_name: git_for_colleagues
-# repo_url: ...
-
-# Copyright
 copyright: Copyright &copy; 2023 Laurens van der Tas
+# repo_url: ...
+# site_url: ...
 
 # Page tree
 nav:
@@ -55,7 +50,6 @@ theme:
     - content.tooltips
     - header.autohide
     - navigation.expand
-    # - navigation.indexes
     - navigation.path
     - navigation.instant
     - navigation.prune
