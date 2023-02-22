@@ -37,6 +37,10 @@ nav:
           - 6_remote_repos/remote_branches.md
           - 6_remote_repos/fetch_pull_push.md
           - 6_remote_repos/pull_requests.md
+      - Best practices & Design:
+          - 7_design_best_practices/index.md
+          - 7_design_best_practices/best_practices.md
+          - 7_design_best_practices/design.md
 
 # Configuration
 theme:
