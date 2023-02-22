@@ -22,11 +22,12 @@ nav:
           - commits/difference.md
       - Branches:
           - branches/index.md
-          - branches/merging.md
+          - branches/creating_switching.md
+          - branches/merge_rebase.md
           - branches/cherry_picking.md
       - Revert & Reset:
           - revert_reset/index.md
-          - revert_reset/reset.md
+          - revert_reset/revert_reset.md
           - revert_reset/head.md
       - Stash:
           - stash/index.md
