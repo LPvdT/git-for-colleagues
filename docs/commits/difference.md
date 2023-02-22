@@ -8,8 +8,8 @@ In order to show the differences in a file(s), relative to previous versions, yo
 
 Commit history:
 
-![Overview](../static/img/file_changes_overview.png){ data-title="Git Graph: Commit history" data-description="Preview of Git Graph with a history of all commits across all branches." }
+![Overview](../assets/images/file_changes_overview.png){ data-title="Git Graph: Commit history" data-description="Preview of Git Graph with a history of all commits across all branches." }
 
 Changes in specific file with respect to previous commit:
 
-![Details](../static/img/file_changes_details.png){ data-title="Git Graph: Specific file changes" data-description="Shows changes made in file with respect to a previous commit." } 
+![Details](../assets/images/file_changes_details.png){ data-title="Git Graph: Specific file changes" data-description="Shows changes made in file with respect to a previous commit." } 
