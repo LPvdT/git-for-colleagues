@@ -4,8 +4,9 @@
   - [x] Index
   - [x] Clone & Fork
   - [x] Remote Branches
-  - [ ] Fetch, Pull, Push
+  - [x] Fetch, Pull, Push
   - [ ] Pull Requests
+  - [ ] Merge Conflicts
 - [ ] Design & Best Practices
   - [ ] Index
   - [ ] Best Practices
