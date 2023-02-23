@@ -2,7 +2,7 @@
 
 When starting collaboration on an existing project, you need a way to tell Git where the remote repository you want to collaborate on resides, and you need to get a local copy of said codebase to work on for yourself. There are two ways to do this: *cloning* the repository, or *forking* the repository.
 
-## Clone
+## Cloning
 
 The `git clone` command is perhaps the most well-known. This command allows you to reflect (i.e. make a copy) of the repository, in its current state, locally. Moreover, this automatically registers the repository, which you clone from, as the remote repository within Git. This will enable you to `git fetch` commits and branches (retrieve changes made by others) from the remote repository, and `git push` (submit your own changes and branches) to this remote repository.
 
@@ -25,7 +25,7 @@ flowchart TB
   R <-. Push/Pull .-> C_3(<b>Clone</b><br/>Developer 3)
 ```
 
-## Fork
+## Forking
 
 Forking a repository is a similar concept, but it differs vastly from cloning. 
 
