@@ -1,6 +1,5 @@
-version: "3"
 services:
-  web:
+  web-nginx:
     image: img-git-for-colleagues
     build: .
     container_name: git-for-colleagues
