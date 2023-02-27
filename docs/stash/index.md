@@ -1,8 +1,8 @@
 # Stash
 
-Imagine you are hard at work writing amazing code for a new feature, and then you realize you are still checked out on another branch. That sucks. 
+Imagine you are hard at work writing amazing code for a new feature, and then you realize you are still checked out on another branch. That sucks. Or imagine you quickly need to change context within the repository, because a colleague asks for help, but the code changes you are currently working on are not ready to commit.
 
-Don't worry; you don't need to manually move all code and every file around. Git has you covered with `git stash`.
+This is where `git stash` comes in.
 
 ## Example: `git stash`
 

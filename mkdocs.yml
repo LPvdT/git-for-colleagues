@@ -37,10 +37,12 @@ nav:
           - remote_repos/remote_branches.md
           - remote_repos/fetch_pull_push.md
           - remote_repos/pull_requests.md
+          - remote_repos/merge_conflicts.md
       - Best practices & Design:
           - design_best_practices/index.md
           - design_best_practices/best_practices.md
           - design_best_practices/design.md
+          - design_best_practices/tools.md
 
 # Configuration
 theme:
@@ -97,7 +99,7 @@ theme:
     code: JetBrains Mono
   icon:
     logo: logo
-  favicon: assets/favicon.png
+  favicon: assets/images/favicon.png
 
 # Plugins
 plugins:
