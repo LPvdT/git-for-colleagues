@@ -11,13 +11,13 @@ The `git fetch` commands downloads all commits, files and refs from a remote rep
 The following example only performs a `git fetch`. Hence, it does not automatically merge the fetched content. This needs to be done manually by merging the `origin/development` branch, using `git merge`.
 
 ```bash
-# Fetch all branches from remote origin: git fetch <remote>
+# Fetch all changes across all branches from remote origin
 git fetch origin
 
-# Fetch specific branch from remote: git fetch <remote> <branch>
+# Fetch changes from a specific branch from remote origin
 git fetch origin development
 
-# Fetch all registered branches from across all remotes
+# Fetch all changes across branches from across all remotes
 git fetch --all
 ```
 
@@ -29,8 +29,10 @@ The following example performs a `git fetch` and then merges the fetched content
 # Checkout local 'development' branch
 git switch development
 
-# Fetch the changes from the 'development' branch on remote 'origin', which are then stored in 'origin/development' locally
+# Fetch the changes from the 'development' branch on remote 'origin',
+# which are then stored in 'origin/development' locally
 git fetch origin development
+
 # Merge the changes from 'origin/development' into 'development'
 git merge origin/development
 ```

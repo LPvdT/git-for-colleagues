@@ -5,7 +5,7 @@ When working with remote repositories, you get so-called *remote-tracking branch
 You cannot directly manipulate these branches yourself. Git will automatically do this whenever any network communication occurs, in order to make sure they accurately represent the state of the remote repository.
 
 !!! info
-    Think remote-tracking branches as bookmarks: they remind you where the branches in your remote repositories were at the last time you connected to them.
+    Think of remote-tracking branches as bookmarks: they remind you what the branches in your remote repositories contained the last time you connected to them.
 
 ## Manipulating Remotes
 
@@ -15,10 +15,10 @@ When you clone a repository, using `git clone`, Git will automatically register 
 # Initialise an empty repository for illustration purposes
 git init
 
-# Manually add a remote for the current repository: git remote add <name> <url>
+# Manually add a remote 'origin' for the current repository
 git remote add origin git@ssh.dev.azure.com:v3/deltafibernl/BICC/Placeholder
 
-# Manually remove a remote for the current repository: git remote rm <name>
+# Manually remove remote 'origin' for the current repository
 git remote rm origin
 ```
 ## Example
@@ -53,13 +53,13 @@ gitGraph
 2. Commit tag `1` & `2`:
       * Two commits are made in `main` (local).
 3. Commit tag `3`:
-      * A new branch `feature_api` is made and a commit is made in it (local).
+      * A new branch `feature_api` is made from `main` and a commit is made to it (local).
 4. Commit tag `4`:
       * A collaborating developer has pushed a commit to the remote `main` branch, reflected in remote-tracking branch `origin/main`.
 5. Commit tag `5`:
-      * A collaborating developer pushed a new remote branch `feature/algorithm` with a commit in it, as reflected in remote-tracking branch `origin/feature/algorithm`.
+      * A collaborating developer pushed a new remote branch `feature/algorithm` (branched from `main`) with a commit in it, as reflected in remote-tracking branch `origin/feature/algorithm`.
 6. Commit tag `6`:
       * A collaborating developer pushed another commit to the remote `main` branch, reflected in remote-tracking branch `origin/main`.
 
-!!! info
+!!! note
     Note that we do not physically have the remote changes, as made by the collaborating developers, in our local repository until we explicitly retrieve them. This retrieval can be done using either `git fetch` paired with `git merge`, or using `git pull`. This will be covered in the next section.

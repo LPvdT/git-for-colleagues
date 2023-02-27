@@ -18,3 +18,5 @@ Upon running this, you will get a message like the following:
 
 !!! info
     I have now created a commit (i.e. 'save point') for these two files in their current state. I have included them both in a single commit, because that makes sense here; both files are part of the content section about commits in my project.
+
+    If I were to change them later on, and accidentally break something, I can always revert the state of the files to this commit (i.e. this 'save point').

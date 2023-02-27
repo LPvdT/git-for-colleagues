@@ -42,4 +42,5 @@ flowchart TD
 
 A fork allows you to essentially '*stand on the shoulders of giants*'; i.e. you can use an existing codebase as a foundation, but adapt the project to go in an entirely different direction. For example, the *MariaDB* database application started as a fork from the well-known *MySQL* database application.
 
-On a final note, forking is not a command available within Git itself. You can access forking as a feature of services like *GitHub*, or *GitLab*. The reason why it is not a feature of the Git CLI is beyond the scope of this document.
+!!! note
+    Fork is not a command available within Git itself. You can access forking as a feature of services like *GitHub*, or *GitLab*. The reason why it is not a feature of the Git CLI is beyond the scope of this document.

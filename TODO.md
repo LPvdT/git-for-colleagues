@@ -13,4 +13,4 @@
   - [x] Design
 - [x] Tools & Extensions
   - [x] Git Graph, etc.
-- [ ] Final proof reading & cleanup
+- [x] Final proof reading & cleanup

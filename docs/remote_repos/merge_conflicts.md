@@ -2,21 +2,21 @@
 
 Git is built with managing contributions from multiple developers on a single codebase (repository) in mind. In that way of working, it could happen that developers are editing, and committing, the same code at the same time. When this occurs, a conflict may arise.
 
-The observant reader will probably now think "we can prevent that using separate, isolated branches, right?". This certainly already prevents many conflicts that could arise. However, it may still happen that, when merging branches from separate developers, conflicts arise nonetheless.
+The observant reader will probably now think "we can prevent that using separate, isolated branches, right?". This certainly does prevent some conflicts that could arise. However, it may still happen that, when merging branches from separate developers, conflicts arise nonetheless.
 
 ## Understanding merge conflicts
 
 Upon the occurence of a merge conflict, Git is unable to automatically determine the correct state of the file. Git only communicates this to the developer conducting the merge (i.e. the unlucky person running `git merge`). Once a merge conflict has been detected by Git, it will mark the file as conflicted and pause the merging process. The developer can then resolve the merge conflict by indicating to Git which files, or lines in files, are correct and should be merged, and which changes can be left out of the merge.
 
-**Some cases where merge conflicts can occur are:**
+**Some cases where merge conflicts can occur:**
 
 * When multiple developers have changed the same lines of code in a file, and then try to merge their work.
 * When a developer deletes a file, even though another developer was working on altering it.
 
-**A case where Git will simply not start the merge, and marks it as a conflict, is when the working directory is not clean:**
+**Case where Git will simply not start the merge, and marks it as a conflict, is when the working directory is not clean:**
 
 * When there pending changes in the staging area, which still have to be committed.
-* When there are detected changes in your files, which you have to first stage and then commit.
+* When there are detected changes in your files, which you first have to stage and then commit.
 
 !!! tip
     If you are unsure how to resolve a merge conflict, run `git merge --abort`. This will immediately exit you from the merge and will return the branch to the state it was in before you started the merge. Now you have some breathing room to do some more research, or ask a more experienced colleague for help.
