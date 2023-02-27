@@ -42,6 +42,7 @@ nav:
           - design_best_practices/index.md
           - design_best_practices/best_practices.md
           - design_best_practices/design.md
+          - design_best_practices/tools.md
 
 # Configuration
 theme:
