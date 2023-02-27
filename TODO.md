@@ -11,5 +11,6 @@
   - [x] Index
   - [x] Best Practices
   - [x] Design
-- [ ] Tools & Extensions
-  - [ ] Git Graph, etc.
+- [x] Tools & Extensions
+  - [x] Git Graph, etc.
+- [ ] Final proof reading & cleanup
