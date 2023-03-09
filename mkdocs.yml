@@ -43,6 +43,9 @@ nav:
           - design_best_practices/best_practices.md
           - design_best_practices/design.md
           - design_best_practices/tools.md
+      - Next steps:
+          - next_steps/index.md
+          - next_steps/tutorials_projects.md
 
 # Configuration
 theme:

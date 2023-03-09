@@ -26,12 +26,12 @@ git fetch --all
 The following example performs a `git fetch` and then merges the fetched content with `git merge`. The changes on the remote are now reflected in your local repository.
 
 ```bash
-# Checkout local 'development' branch
-git switch development
-
 # Fetch the changes from the 'development' branch on remote 'origin',
 # which are then stored in 'origin/development' locally
 git fetch origin development
+
+# Checkout local 'development' branch
+git switch development
 
 # Merge the changes from 'origin/development' into 'development'
 git merge origin/development

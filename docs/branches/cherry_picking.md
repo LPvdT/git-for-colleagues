@@ -2,7 +2,10 @@
 
 It may happen that you have accidentally committed a change into the wrong branch or that, in hindsight, some prior commits actually make more sense in another branch. This is where cherry picking comes in.
 
-Where `git merge` merges all commits of one branch into another branch, `git cherry-pick` lets you choose which specific comments you want to 'copy' to another branch.
+Where `git rebase` appends all commits of one branch onto another branch, `git cherry-pick` lets you choose which specific comments you want to 'copy' to another branch.
+
+!!! note
+    While `git rebase` is *destructive*, `git cherry-pick` is not. After cherry-picking the commits you want, the original branch still exists exactly as it was.
 
 ## Example: `git cherry-pick`
 
@@ -26,7 +29,7 @@ In order to fix this, we will use `git cherry-pick`:
 
 ```bash
 # Ensure the branch we want to cherry pick the comment to is checked out
-git checkout development
+git switch development
 
 # Cherry pick the commit we want to move to 'development'
 git cherry-pick damn

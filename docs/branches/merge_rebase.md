@@ -42,11 +42,15 @@ In the visualisation below, we are once again satisfied with the work on the `de
 As *Mermaid* graphs do not support rebase as in its syntax, I have constructed it in a poor man's way below. The highlighted commits on `main` prefixed with `r_` denote the commits rebased onto the `main` branch from the `development` branch.
 
 ```bash
-# Ensure we are checked out in the branch we want to rebase onto
-git switch main
+# Ensure we are checked out in the branch we want to rebase onto another branch
+git switch development
 
-# Then rebase the 'development' branch onto the 'main' branch
-git rebase development
+# Then rebase the active branch onto the 'main' branch
+git rebase main
+
+# Then advance (fast-forward) the main branch to the newest commit
+git switch main
+git rebase feature
 ```
 
 ```mermaid
