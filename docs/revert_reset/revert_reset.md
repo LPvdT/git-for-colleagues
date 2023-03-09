@@ -12,9 +12,9 @@ We have accidentally committed a change in the `development` branch with commit 
 
 ```bash
 # Ensure we are checked out in the right branch
-git checkout development
+git switch development
 
-# Revert the unwanted comment
+# Revert the unwanted commit
 git revert damn
 ```
 
@@ -37,7 +37,17 @@ The commit with ID `undo_damn` has now removed the changes made by commit `damn`
 
 ## Reset
 
-`git reset` is a way to clear changes that have been staged, using `git add`. Consider the following example:
+`git reset` will move a branch to a commit back in time, in the sense that it appears as if the commit had never been made.
+
+```bash
+# Checkout the branch that has the commit we want to reset
+git switch development
+
+# Reset the branch, discarding the current commit
+git reset HEAD
+```
+
+`git reset` is also a way to clear changes that have been staged, using `git add`. Consider the following example:
 
 ```bash
 # Let's stage two arbitrary files
@@ -73,7 +83,7 @@ gitGraph
 
 ```bash
 # Ensure we are checked out in the proper branch
-git checkout development
+git switch development
 
 # Hard reset the branch one commit back from the current checked-out state
 git reset --hard HEAD~1

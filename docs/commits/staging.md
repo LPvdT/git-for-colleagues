@@ -1,6 +1,6 @@
 # Staging
 
-Before you can commit a files (or files), you first have to stage them. You can use this using the `git add` command.
+Before you can commit a file (or files), you first have to stage them. You can use this using the `git add` command.
 
 ## Staging files
 

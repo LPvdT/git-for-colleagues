@@ -51,3 +51,6 @@ gitGraph
   commit id: "dev_2"
   commit id: "dev_3"
 ```
+
+!!! tip
+      To create a new branch, and immediately check it out, you can use the following shorthand: `git checkout -b <new_branch_name>`.
