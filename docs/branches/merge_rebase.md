@@ -33,7 +33,7 @@ gitGraph
 
 ## Rebasing
 
-Rebasing is kind of similar to merging. When rebasing, you move and combine the commits of another branch and 'append' them to the current branch.
+Rebasing is kind of similar to merging. When rebasing, you move and combine the commits of another branch and *append* them to the current branch.
 
 ### Example: `git rebase`
 
@@ -68,7 +68,11 @@ gitGraph
     commit id: "r_dev_3" type: HIGHLIGHT
 ```
 
-!!! question "When to use `git rebase` over `git merge`?"
-    First and foremost, `rebase` has some inherent dangers for beginners. The short version is that, among other things, `rebase` is *destructive*; which can be catastrophic in a *DevOps* workflow, whereas `merge` is not. Therefore, it is safer for beginners to stick to `merge`. Also, as a general rule of thumb, never `rebase` when working in public repositories.
+??? question "When to use `git rebase` over `git merge`?"
+    **`git rebase` is destructive**
+
+    First and foremost, `rebase` has some inherent dangers for beginners. The short version is that, among other things, `rebase` is *destructive*; which can be catastrophic in a *DevOps* workflow, as you cannot reverse the changes, whereas `merge` is not. Therefore, it is safer for beginners to stick to `merge`. Also, as a general rule of thumb, never `rebase` when working in public repositories with other contributors.
+
+    **`git rebase` can be clear- and clean-looking**
 
     Having said that, using `rebase` over `merge` allows for a much cleaner, and linear, project history. This, in turn, makes commands like `git log` and `git bisect` easier to navigate with. Furthermore, one of the best features of `rebase` is the `i` flag, which triggers an interactive rebase. This allows the developer to clean up the commit history while rebasing. Learn more about it [here](https://www.sitepoint.com/git-interactive-rebase-guide/).
