@@ -6,7 +6,7 @@ Before you can commit a file (or files), you first have to stage them. You can u
 
 First, an example of my current status, using `git status`:
 
-```
+```termcap
 On branch development
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
@@ -35,7 +35,7 @@ git add docs/commits/staging.md
 
 If I were to run `git status` once more, the following shows up:
 
-```
+```termcap
 On branch development
 Changes to be committed:
   (use "git restore --staged <file>..." to unstage)
