@@ -7,6 +7,10 @@ You cannot directly manipulate these branches yourself. Git will automatically d
 !!! info
     Think of remote-tracking branches as bookmarks: they remind you what the branches in your remote repositories contained the last time you connected to them.
 
+**Visual example of remote-tracking branches in a repository:**
+
+![Remote-tracking Branches](../assets/images/remote_tracking_branches.png){ data-title="Example: Remote-tracking branches" data-description="The remote-tracking branches are indicated by the red arrows." }
+
 ## Manipulating Remotes
 
 When you clone a repository, using `git clone`, Git will automatically register the location of the remote. However, you can also manually add or remove remotes:
@@ -62,4 +66,6 @@ gitGraph
       * A collaborating developer pushed another commit to the remote `main` branch, reflected in remote-tracking branch `origin/main`.
 
 !!! note
-    Note that we do not physically have the remote changes, as made by the collaborating developers, in our local repository until we explicitly retrieve them. This retrieval can be done using either `git fetch` paired with `git merge`, or using `git pull`. This will be covered in the next section.
+    Note that we do not physically have the changes in the remote repository, as made by the collaborating developers, reflected in our local repository until we explicitly retrieve them. This retrieval can be accomplished using `git fetch`. After running this command, the remote-tracking branches will be updated with the latest changes from the remote.
+
+    Fetching and pushing changes will be covered in the next section.

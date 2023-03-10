@@ -14,7 +14,7 @@ This command will provide you with an overview of e.g. which files:
 
 Running the command will provide something in line with the following information:
 
-```
+```termcap
 On branch development
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)

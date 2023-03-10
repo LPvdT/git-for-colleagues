@@ -1,8 +1,11 @@
 # Stash
 
-Imagine you are hard at work writing amazing code for a new feature, and then you realize you are still checked out on another branch. That sucks. Or imagine you quickly need to change context within the repository, because a colleague asks for help, but the code changes you are currently working on are not ready to commit.
+When would you use `git stash`?
 
-This is where `git stash` comes in.
+- Imagine you quickly need to change context within the repository, because a colleague asks for help, but the code changes you are currently working on are not ready to commit.
+    - *Stash them!* This removes them from your pending changes, and allows you to help your colleague. Afterwards, you can retrieve your work from the stash and continue.
+- Imagine you want to commit changes for a feature you have been working on, but the upstream branch of this feature has been updated by a colleague. 
+    - *Stash them!* The removes them from your pending changes, allowing you to fetch and merge the upstream changes. Afterwards, you can retrieve your work from the stash and carry on.
 
 ## Example: `git stash`
 

@@ -4,12 +4,12 @@ It may happen that you have accidentally committed a change into the wrong branc
 
 Where `git rebase` appends all commits of one branch onto another branch, `git cherry-pick` lets you choose which specific comments you want to 'copy' to another branch.
 
-!!! note
-    While `git rebase` is *destructive*, `git cherry-pick` is not. After cherry-picking the commits you want, the original branch still exists exactly as it was.
+!!! info
+    While `git rebase` is *destructive*, `git cherry-pick` is not. After cherry-picking the commits you want, the original branch - and commits - still exist exactly as they were.
 
 ## Example: `git cherry-pick`
 
-The visualisation below is more or less the same as the merging example in the previous section. However, this time, we were accidentally checked out in the `main` branch when we committed the commit with ID *damn*.
+The visualisation below is more or less the same as the merging example in the previous section. However, this time, we were accidentally checked out in the `main` branch when we committed the commit with hash *damn*.
 
 ```mermaid
 gitGraph

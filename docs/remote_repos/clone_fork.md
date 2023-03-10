@@ -4,9 +4,9 @@ When starting collaboration on an existing project, you need a way to tell Git w
 
 ## Cloning
 
-The `git clone` command is perhaps the most well-known. This command allows you to reflect (i.e. make a copy) of the repository, in its current state, locally. Moreover, this automatically registers the repository, which you clone from, as the remote repository within Git. This will enable you to `git fetch` commits and branches (retrieve changes made by others) from the remote repository, and `git push` (submit your own changes and branches) to this remote repository.
+The `git clone` command is perhaps the most well-known. This command allows you to reflect (i.e. make a copy) the repository, in its current state, locally. Moreover, this automatically registers this source repository as the remote repository within Git. This will enable you to `git fetch` commits and branches (retrieve changes made by others) *from* the remote repository, and `git push` (submit your own changes and branches) *to* this remote repository.
 
-For example, I frequently contribute to open-source development projects, such as [PyTorch](https://pytorch.org/docs/master/community/contribution_guide.html): a popular deep learning framework. If you would want to do that as well, you would e.g. start by cloning the repository:
+For example, I frequently contribute to open-source development projects, such as [PyTorch](https://pytorch.org/docs/master/community/contribution_guide.html): a popular deep learning framework. If you would want to do that as well, you would start by cloning the repository:
 
 ```bash
 # Navigate to the directory you want to store the cloned repository
@@ -14,6 +14,9 @@ cd ~/coding/python
 
 # Clone the Pytorch repository
 git clone https://github.com/pytorch/pytorch
+
+# Change directory to the repository
+cd pytorch
 ```
 
 As visualised below, this workflow enables multiple developers to work on the same project (repository) at the same time.
@@ -29,7 +32,7 @@ flowchart TB
 
 Forking a repository is a similar concept, but it differs vastly from cloning. 
 
-When using `git clone`, you copy the entire repository, along with its ties to the remote location, thus enabling you to `git fetch` from it and `git push` to it. A fork *only* copies the repository, but creates an entirely new and seperated codebase. There is no synchronisation between your fork and the original repository, in the sense that you could push to it, or pull from it, as you would have been able to when cloning.
+When using `git clone`, you copy the entire repository, along with its ties to the remote location, thus enabling you to `git fetch` *from* it and `git push` *to* it. A fork *only* copies the repository, but creates an entirely new and seperated codebase. There is no synchronisation between your fork and the original repository, in the sense that you could *push* to it, or *pull* from it, as you would have been able to when cloning. In Git terms: It does not register the source as a remote repository for your local repository.
 
 ```mermaid
 flowchart TD
