@@ -35,6 +35,8 @@ gitGraph
   commit id: "C" tag: "v1.0"
 ```
 
+While this may be a little bit convoluted for very small projects, where you can get away with a `main` and `development` branch, it is great to use in somewhat larger projects with multiple contributors.
+
 ## Branch: `main`
 
 This should be the *release* branch. Only stable, production-grade code should reside here. The only branches that should merge into the `main` branch are the `development` and `hotfix` branches. 
