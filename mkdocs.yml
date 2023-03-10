@@ -4,8 +4,8 @@ site_author: Laurens van der Tas
 site_description: To the point guide for colleagues for using Git.
 repo_name: git_for_colleagues
 copyright: Copyright &copy; 2023 Laurens van der Tas
-# repo_url: ...
-# site_url: ...
+repo_url: https://github.com/LPvdT/git-for-colleagues
+site_url: https://placeholder.leuter.teun
 
 # Page tree
 nav:
