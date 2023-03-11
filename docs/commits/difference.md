@@ -30,19 +30,19 @@ Terminal output (truncated):
 
 ```termcap
 commit 90881e6ef792aa3351d9bbf5191f7b8cb314251a
-Author: Laurens van der Tas <Laurens.vanderTas@deltafiber.nl>
+Author: Laurens van der Tas <Laurens@email.nl>
 Date:   Mon Feb 27 13:49:03 2023 +0100
 
     Change: Cleanup from proof reading
 
 commit c9df343a6121d5573c1ce545113ddc82686362d3
-Author: Laurens van der Tas <Laurens.vanderTas@deltafiber.nl>
+Author: Laurens van der Tas <Laurens@email.nl>
 Date:   Wed Feb 22 12:42:41 2023 +0100
 
     Change: Fixes and expansion commits section
 
 commit 0db34a8d2f207fcf61539a2f8d13c4e0278385d7
-Author: Laurens van der Tas <Laurens.vanderTas@deltafiber.nl>
+Author: Laurens van der Tas <Laurens@email.nl>
 Date:   Wed Feb 22 11:46:07 2023 +0100
 ```
 
@@ -58,7 +58,7 @@ Terminal output (truncated):
 
 ```termcap
 commit 90881e6ef792aa3351d9bbf5191f7b8cb314251a
-Author: Laurens van der Tas <Laurens.vanderTas@deltafiber.nl>
+Author: Laurens van der Tas <Laurens@email.nl>
 Date:   Mon Feb 27 13:49:03 2023 +0100
 
     Change: Cleanup from proof reading
