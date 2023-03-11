@@ -4,7 +4,7 @@ A `repository` is a specific folder that you have instructed Git to track.
 
 ## Initializing a repository
 
-Before Git is able to track files, you first have to tell it to treat a specific directory as a repository. This is called initialising a respository and is done with the `git init` command.
+Before Git is able to track files, you first have to tell it to treat a specific directory as a repository. This is called initialising a repository and is done with the `git init` command.
 
 ```bash
 # Initialize a repository in your current working directory

@@ -6,7 +6,7 @@ The observant reader will probably think: *"we can prevent that using separate, 
 
 ## Understanding merge conflicts
 
-Upon the occurence of a merge conflict, Git is unable to automatically determine the correct state of the file. Git only communicates this to the developer conducting the merge (i.e. the unlucky person running `git merge`). 
+Upon the occurrence of a merge conflict, Git is unable to automatically determine the correct state of the file. Git only communicates this to the developer conducting the merge (i.e. the unlucky person running `git merge`). 
 
 Once a merge conflict has been detected by Git, it will mark the file as conflicted and halt the merging process. The developer can then resolve the merge conflict by indicating to Git which changes are correct, and should be merged, and which changes can be left out of the merge and discarded.
 
@@ -31,7 +31,7 @@ The images below show how a merge conflict may be handled in *Visual Studio Code
 
 ### Arising merge conflict
 
-A merge conflict has occured in one file. Both versions of the files, along with the conflicting lines, are shown.
+A merge conflict has occurred in one file. Both versions of the files, along with the conflicting lines, are shown.
 
 ![Merge conflict](../assets/images/merge_conflict.png){ data-title="Merge conflict" data-description="Example of how a merge conflict may look like in <i>Visual Studio Code.</i>" width="75%" }
 
@@ -41,13 +41,13 @@ To resolve a merge conflict, the developer has a couple of options at their disp
 
 #### Accept current state
 
-By accepting the current state, the incoming changes are dropped. The results are shown in the bottem panel in the UI.
+By accepting the current state, the incoming changes are dropped. The results are shown in the bottom panel in the UI.
 
 ![Merge conflict: Accept current](../assets/images/merge_conflict_option_current.png){ data-title="Merge conflict: Accept current" data-description="The situation when the choice is made to accept the <i>current</i> state." width="50%" }
 
 #### Accept incoming state
 
-By accepting the incoming state, the current changes are dropped. The results are shown in the bottem panel in the UI.
+By accepting the incoming state, the current changes are dropped. The results are shown in the bottom panel in the UI.
 
 ![Merge conflict: Accept incoming](../assets/images/merge_conflict_option_incoming.png){ data-title="Merge conflict: Accept incoming" data-description="The situation when the choice is made to accept the <i>incoming</i> state." width="50%" }
 
