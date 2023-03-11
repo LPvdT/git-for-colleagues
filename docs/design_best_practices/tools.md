@@ -1,6 +1,6 @@
 # Tools & Extensions
 
-You can, of course, perform your entire Git workflow using the Git CLI in your Terminal. Moreso, I heavily recommend at least understanding, and performing, the basic Git workflow using the CLI at least once. This will help you build some familiarity and muscle memory.
+You can, of course, perform your entire Git workflow using the Git CLI in your Terminal. In fact, I heavily recommend at least understanding, and performing, the basic Git workflow using the CLI at least once. This will help you build some familiarity and muscle memory.
 
 I still use the CLI for some Git operations on a daily basis. A prime example is interactive rebasing. The CLI provides a fine-grained amount of control that most tools and extensions with a UI do not provide. 
 

@@ -20,7 +20,7 @@ When you clone a repository, using `git clone`, Git will automatically register 
 git init
 
 # Manually add a remote 'origin' for the current repository
-git remote add origin git@ssh.dev.azure.com:v3/deltafibernl/BICC/Placeholder
+git remote add origin git@ssh.dev.azure.com:v3/organisation/subdomain/Placeholder
 
 # Manually remove remote 'origin' for the current repository
 git remote rm origin

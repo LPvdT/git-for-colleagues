@@ -26,6 +26,6 @@ Aside from learning Git in a real-world environment, it is also a great way to i
 
 You could also consider contributing to popular, large open-source projects in order to get more in-depth experience. 
 
-There is always work to be done in open-source projects, and this does not necessarily mean NASA-level complex stuff, such as optimising some confusing low-level algorithm in *C++* to reduce CPU wall time by some 10 nanoseconds. To get your feet wet, you could start contributing by fixing some docstrings, doing some basic refactoring for convoluted code, or adding proper typing to existing functions and methods to help users' type checking and *IntelliSense*.
+There is always work to be done in open-source projects, and this does not necessarily mean NASA-level complex stuff, such as optimising some confusing low-level algorithm in *C++* to reduce CPU wall time by some 10 nanoseconds. To get your feet wet, you could start contributing by fixing some *docstrings*, doing some basic refactoring for convoluted code, or adding proper typing to existing functions and methods to help users' type checking and *IntelliSense*.
 
 There are plenty of contributions to be made across all different degrees of coding skill, and every contribution is very valuable.
