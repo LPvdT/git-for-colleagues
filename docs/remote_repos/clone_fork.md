@@ -30,7 +30,7 @@ flowchart TB
 
 ## Forking
 
-Forking a repository is a similar concept, but it differs vastly from cloning. 
+Forking a repository is a similar concept to cloning, but there a some differences.
 
 When using `git clone`, you copy the entire repository, along with its ties to the remote location, thus enabling you to `git fetch` *from* it and `git push` *to* it. A fork *only* copies the repository, but creates an entirely new and separated codebase. There is no synchronisation between your fork and the original repository, in the sense that you could *push* to it, or *pull* from it, as you would have been able to when cloning. In Git terms: It does not register the source as a remote repository for your local repository.
 

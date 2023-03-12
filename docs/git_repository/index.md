@@ -11,4 +11,4 @@ Before Git is able to track files, you first have to tell it to treat a specific
 git init
 ```
 
-Basically, from now on out, every change you will make to a file within this working directory will be tracked by Git.
+Basically, from here on out, every change you will make to a file within this working directory will be tracked by Git.

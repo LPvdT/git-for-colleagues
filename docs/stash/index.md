@@ -2,10 +2,10 @@
 
 When would you use `git stash`?
 
-- Imagine you quickly need to change context within the repository, because a colleague asks for help, but the code changes you are currently working on are not ready to commit.
+- Imagine you quickly need to change context within the repository, because a colleague asks for help, but the code changes you are currently working on are not yet ready to commit.
     - *Stash them!* This removes them from your pending changes, and allows you to help your colleague. Afterwards, you can retrieve your work from the stash and continue.
 - Imagine you want to commit changes for a feature you have been working on, but the upstream branch of this feature has been updated by a colleague. 
-    - *Stash them!* The removes them from your pending changes, allowing you to fetch and merge the upstream changes. Afterwards, you can retrieve your work from the stash and carry on.
+    - *Stash them!* This removes them from your pending changes, allowing you to fetch and merge the upstream changes. Afterwards, you can retrieve your work from the stash and carry on.
 
 ## Example: `git stash`
 
@@ -35,9 +35,7 @@ git commit -m "From stash"
 git stash drop 0
 ```
 
-I hacked together the visualisation below to give you some visual representation of what is going on. It is not entirely accurate, but I hope it conveys the idea.
-
-<br />
+I hacked together the visualisation below to give you some visual representation of what is going on. It is not entirely accurate, because *Mermaid* graphs do not support `git stash`, but it conveys the general idea.
 
 ```mermaid
 gitGraph

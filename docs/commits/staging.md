@@ -1,6 +1,6 @@
 # Staging
 
-Before you can commit a file (or files), you first have to stage them. You can use this using the `git add` command.
+Before you can commit a file (or files), you first have to stage them. You can do this using the `git add` command.
 
 ## Staging files
 
@@ -23,7 +23,7 @@ Untracked files:
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
-Let's say I want to include both untracked files to stage them for preserving them in a single commit. To do that, I would run the following:
+Let's say I want to include both untracked files so I can preserve them in a single commit. To do that, I would run the following:
 
 ```bash
 # Add new files to staging area

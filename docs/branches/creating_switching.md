@@ -12,7 +12,7 @@ git branch development
 git branch bugfix ab245
 ```
 
-When subsequently calling `git branch` without argument, Git shows all your branches, along with the active one :
+When subsequently calling `git branch` without an argument, Git shows all your branches, along with the active one:
 
 ```termcap
   development
@@ -47,7 +47,7 @@ Below is a simple visualisation to demonstrate this process:
 3. A new branch called `development` is made with `git branch development`.
 4. The `development` branch is switched to with `git switch development`.
 5. Three commits are made on the `development branch`.
-      - Therefore, trice, a file has been added/modified; staged with `git add` and then committed with `git commit`.
+      - Therefore, three times, a file has been added/modified; staged with `git add` and then committed with `git commit`.
 
 ```mermaid
 gitGraph

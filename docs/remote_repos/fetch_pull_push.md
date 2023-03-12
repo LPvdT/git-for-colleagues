@@ -4,7 +4,7 @@ In order te retrieve changes made by others, and submit your own changes to the 
 
 ## Fetching changes
 
-The `git fetch` commands downloads all commits, files and refs from a remote repository into your local repository. Fetched content will not be immediately merged, but will remain isolated from existing local content, which makes it safe. You can review all fetched commits before merging them with your existing work.
+The `git fetch` command downloads all commits, files and refs from a remote repository into your local repository. Fetched content will not be immediately merged, but will remain isolated from existing local content, which makes it safe. You can review all fetched commits before merging them with your existing work.
 
 ### Example: `git fetch`
 

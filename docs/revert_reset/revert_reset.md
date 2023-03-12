@@ -2,7 +2,7 @@
 
 ## Revert
 
-`git revert` is the friendly way of undoing a commit and, frankly, the only socially acceptable way to do it, if you are working in remote repositories with a lot of contributors.
+`git revert` is the friendly way of undoing a commit and, frankly, the only acceptable way to do it, if you are working in remote repositories with a lot of contributors.
 
 `git revert` adds a new commit that will undo the changes of the commit you want revoked. For example, if an unwanted commit adds the text *"Oops, my cat is walking over my keywalrhlgk"* to the bottom of a specific file, a revert on that commit will remove *"Oops, my cat is walking over my keywalrhlgk"* from the bottom of that file. It will effectively restore it to the state before that commit had been made.
 
@@ -66,7 +66,7 @@ git reset README.md
 git reset
 ```
 
-However, the command also be made a lot meaner by using the `--hard` argument. This way, the command can be used to hard delete commits. Commits reset this way will be entirely removed from the commit history - and file history - and cannot be retrieved. It is therefore fully destructive.
+However, the command can also be modified using the `--hard` flag. This way, the command can be used to hard delete commits. Commits reset this way will be entirely removed from the commit history - and file history - and cannot be retrieved. It is therefore fully destructive.
 
 ### Example: `git reset --hard`
 
@@ -112,4 +112,4 @@ gitGraph
 ??? info "`git reset` parameters: `--soft`, `--mixed`, `--hard`"
     - **`git reset --soft`:** Keeps files intact and moves the changes back to the *staging area*.
     - **`git reset --mixed`:** The default option, if you do not specify one explicitly. Keeps files intact, but removes them from the *staging area*.
-    - **`git reset --hard`**: Completely eradicate changes and removes them from the repository, and local filesystem, entirely.
+    - **`git reset --hard`**: Completely eradicates changes and removes them from the repository, and local filesystem, entirely.

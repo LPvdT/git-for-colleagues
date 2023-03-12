@@ -2,7 +2,7 @@
 
 As said previously, committing the same file again, after changes have been made to it, makes Git track the changes.
 
-In order to show the differences in a file(s), relative to previous versions. In my opinion, the most easy and visually clear way to do this, is by using the [*Git Graph*](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph) extension in *VSCode*.
+In order to show the differences in a file(s), relative to previous versions. One of the easiest, and most visually clear way to do this, is by using the [*Git Graph*](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph) extension in *VSCode*.
 
 ## Git Graph
 
@@ -16,7 +16,7 @@ In order to show the differences in a file(s), relative to previous versions. In
 
 ## Git CLI
 
-There are, of course, also multiple way to inspect changes to a file using the Git CLI. I will show you two examples using `git log`.
+There are multiple ways to inspect changes to a file using the Git CLI. I will show you two examples using `git log`.
 
 **Show all commits that have made changes to a specific file:**
 
